@@ -10,4 +10,7 @@ routes.get('/', (req, res) => {
 routes.post('/users', UserController.store);
 routes.post('/sessions', SessionController.store);
 
+// Auth required
+routes.put('/users', UserController.update);
+
 export default routes;
